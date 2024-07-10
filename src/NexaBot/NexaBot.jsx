@@ -62,14 +62,15 @@ const NexaBot = () => {
         }
     }
   return (
-    <div className={`flex justify-end fixed z-50 bottom-0 max-md:left-5 max-md:right-5 right-10 `}>
+    <div className={`flex justify-end fixed z-50 ${openRobo ? "bottom-2" : "bottom-10"} left-10 top-0 max-md:left-5 max-md:right-5 right-10 `}>
             {openRobo ?
-                <div className=' md:w-96 w-full rounded-t-lg  bg-white'>
+                <div className='  w-full rounded-t-lg  bg-white'>
                     <div className='flex justify-between p-3 rounded-t-lg items-center bg-[#1B55F5]'>
                         <div className='flex items-center gap-2 font-semibold text-white'>
                             <img src={nexaRobo} alt='nexaRobo' className='h-5 w-5' />
                             Ask Nexa
                         </div>
+
                         <div className='flex gap-3'>
                             <label className="inline-flex items-center cursor-pointer my-anchor-element">
                                 <input type="checkbox" value="" className="sr-only peer " onChange={(e) => handleChange(e)}
