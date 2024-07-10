@@ -62,9 +62,9 @@ const NexaBot = () => {
         }
     }
   return (
-    <div className={` fixed z-50 ${openRobo ? "bottom-2" : "bottom-16"} right-10 `}>
+    <div className={`flex justify-end fixed z-50 ${openRobo ? "bottom-2" : "bottom-16"} max-md:left-5 max-md:right-5 right-10 `}>
             {openRobo ?
-                <div className=' w-96 rounded-t-lg  bg-white'>
+                <div className=' md:w-96 w-full rounded-t-lg  bg-white'>
                     <div className='flex justify-between p-3 rounded-t-lg items-center bg-[#1B55F5]'>
                         <div className='flex items-center gap-2 font-semibold text-white'>
                             <img src={nexaRobo} alt='nexaRobo' className='h-5 w-5' />
